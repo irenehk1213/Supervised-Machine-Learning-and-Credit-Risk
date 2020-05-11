@@ -14,5 +14,7 @@ SMOTEENN combines the SMOTE and Edited Nearest Neighbors (ENN) algorithms. SMOTE
 1. Oversample the minority class with SMOTE.
 2. Clean the resulting data with an undersampling strategy. If the two nearest neighbors of a data point belong to two different classes, that data point is dropped.
 ## 4) Ensemble Learners
+BalancedRandomForestClassifier and EasyEnsembleClassifier, both from imblearn.ensemble.
 
+## Conclusion 
 To begin with the conclusion, the results explain that there're none of the best models and I do not recommend any particular model; the models performance is evaluated based on the 1) precision 2)recall scores, and 3)the balanced accuracy score basically. When the test was previously evaluated in a study, the results were collated into the following table, called a confusion matrix. Precision = TP/(TP + FP); Sensitivity = TP/(TP + FN); And as you can see the result of the following imbalanced classification report at the end of the each model, none of them have overall balanced/ high enough result of precision, recall, and balanced accuracy score. Either or at least one output among them are insufficient to prove that they are performing outstanding. 
